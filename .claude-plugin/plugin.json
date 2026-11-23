@@ -2,7 +2,7 @@
   "name": "usage-meter",
   "version": "0.1.0",
   "description": "Shows 5-hour and weekly rate-limit usage and what's left, in percent",
-  "author": { "name": "Aurel" },
+  "author": { "name": "Aurel Pleshkan" },
   "license": "MIT",
   "types": "./types/index.d.ts"
 }

@@ -22,9 +22,9 @@ const untilReset = (iso?: string, now = Date.now()) => {
   if (!iso) return ''
   const ms = new Date(iso).getTime() - now
   if (!(ms > 0)) return ''
-  const h = Math.floor(ms / 3_600_000)
-  const m = Math.floor((ms % 3_600_000) / 60_000)
-  return h >= 24 ? ` · сброс ${Math.floor(h / 24)}д ${h % 24}ч` : ` · сброс ${h}ч ${m}м`
+  const hours = Math.floor(ms / 3_600_000)
+  const mins = Math.floor((ms % 3_600_000) / 60_000)
+  return hours >= 24 ? ` · сброс ${Math.floor(hours / 24)}д ${hours % 24}ч` : ` · сброс ${hours}ч ${mins}м`
 }
 
 const line = (w: Window, now: number) => {
